@@ -3,8 +3,7 @@
 import pandas as pd
 import plotly.express as px
 
-well_meta_csv = 'wellbore_exploration_all.csv'
-well_meta_df = pd.read_csv(well_meta_csv)
+well_meta_df = pd.read_csv('wellbore_exploration_all.csv')
 well_meta_df.rename(columns={'wlbWellboreName': 'WELL',
                              'wlbWell': 'WELL_HEAD',
                             'wlbNsDecDeg': 'lat',
@@ -63,7 +62,7 @@ marker_g = formasi[formasi['Well identifier']=='17/4-1'].drop(['Well identifier'
 plt.figure(figsize=(8,20))
 
 plt.subplot(121)
-plt.title('b')
+plt.title('17/11-1')
 plt.plot('GR', 'DEPTH_MD', data=sumur_b)
 for i in marker_b.values:
     plt.hlines(i[1], 0, 1,'red',linestyles='dashed', alpha=0.5)
@@ -72,7 +71,7 @@ plt.ylim(800,4000)
 plt.gca().invert_yaxis()
 
 plt.subplot(122)
-plt.title('g')
+plt.title('17/4-1')
 plt.plot('GR', 'DEPTH_MD', data=sumur_g)
 for i in marker_g.values:
     plt.hlines(i[1], 0, 1,'red',linestyles='dashed', alpha=0.5)
