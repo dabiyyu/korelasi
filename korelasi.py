@@ -79,7 +79,7 @@ for i in marker_g.values:
 plt.ylim(800,4000)
 plt.gca().invert_yaxis()
 
-plt.show();
+plt.show()
 plt.tight_layout()
 
 
