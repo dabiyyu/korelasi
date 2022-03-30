@@ -1,6 +1,6 @@
 # korelasi
 
-Korelasi sumur menggunakan Python <br />
+Korelasi sumur menggunakan <br />
 
 
 referensi: <br />
