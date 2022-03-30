@@ -1,6 +1,6 @@
 # korelasi
 
-Korelasi sumur menggunakan <br />
+Korelasi Sumur <br />
 
 
 referensi: <br />
